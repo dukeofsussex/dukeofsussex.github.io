@@ -1,0 +1,265 @@
+body {
+    /*background-image: url("./nyan.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;*/
+    background-color: #323232;
+}
+
+footer {
+    padding: 1rem;
+}
+
+a {
+    color: #ffa500;
+}
+
+a:hover {
+    color: #cc8400;
+}
+
+a.card-body {
+    color: inherit;
+}
+
+a.card-body:hover {
+    text-decoration: none;
+}
+
+hr {
+    border-top: 1px solid rgba(255,255,255,0.5);
+}
+
+main {
+    margin-top: 56px;
+}
+
+#about .container {
+    min-height: 600px;
+}
+
+#contactError,
+#contactSuccess {
+    display: none;
+}
+
+#projects h4 {
+    text-align: center;
+}
+
+#projects .row {
+    margin: 0;
+}
+
+#profile-pic {
+    height: 256px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+#skills .row {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: .5rem;
+}
+
+#submitButton {
+    color: #ffa500;
+    background-color: transparent;
+    background-image: none;
+    border-color: #ffa500;
+}
+
+#submitButton:focus,
+#submitButton:hover,
+#submitButton:active,
+#submittingButton {
+    color: #fff;
+    background-color: #ffa500;
+    border-color: #ffa500;
+}
+
+#submittingButton:disabled,
+#submittedButton:disabled {
+    display: none;
+    opacity: 1;
+}
+
+.bg-highlight {
+    background-color: #464646 !important;
+}
+
+.card {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 125px;
+}
+
+.card-body {
+    color: #fff;
+}
+
+.card-body > i {
+    display: block;
+    font-size: 3em;
+}
+
+.card-body > img {
+    display: block;
+    margin: auto;
+}
+
+.jumbotron {
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.nav-item {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.nav-item > .active {
+    border-top: .3rem solid #ffa500;
+    color: #ffa500;
+    margin-top: -0.5rem;
+    padding-top: 0.7rem;
+}
+
+.nav-item > .active:hover {
+    color: #cc8400;
+}
+
+.nav-item > a {
+    color: #fff;
+}
+
+.nav-item > a:hover {
+    color: #cccccc;
+}
+
+.paralax {
+    min-height: 600px;
+    background-color: transparent;
+}
+
+.paralax h1,
+.paralax h2,
+.paralax h3,
+.paralax h4,
+.paralax h5 {
+    text-align: center;
+}
+
+.paralax h2 {
+    line-height: 100px;
+}
+
+.paralax h4,
+.paralax h5 {
+    line-height: 50px;
+}
+
+.paralax-centered {
+    height: 80vh;
+}
+
+.paralax-centered .btn {
+    width: 250px;
+    margin-top: 15px;
+}
+
+.paralax-centered > .container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.paralax-fullscreen {
+    position: relative;
+    height: 90vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.paralax-fullscreen > .container {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.paralax-api {
+    background-image: url("images/api.png");
+    background-position: left top;
+}
+
+.paralax-floorplanner {
+    background-image: url("images/floorplanner.png");
+}
+
+.paralax-idb {
+    background-image: url("images/idb.png");
+}
+
+.paralax-idbex {
+}
+
+.paralax-qc {
+    background-image: url("images/qc.png");
+}
+
+.paralax-supraball {
+    background-image: url("images/sb.png");
+}
+
+#about,
+.project-desc {
+    background-color: rgba(70,70,70,0.5);
+}
+
+@media (max-width: 992px) {
+    #skills .row {
+        margin-bottom: 0;
+    }
+
+    #skills .card {
+        margin-bottom: .5rem;
+    }
+
+    .navbar-nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
+
+    .paralax-centered {
+        height: 100vh;
+    }
+}
+
+@media (max-width: 576px) {
+    #landing {
+        height: 100vh;
+    }
+
+    .paralax-centered {
+        height: auto;
+    }
+
+    .paralax-centered:not(#landing) .container {
+        position: relative;
+        top: auto;
+        transform: none;
+    }
+}
